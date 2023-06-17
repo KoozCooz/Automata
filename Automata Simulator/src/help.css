@@ -1,0 +1,52 @@
+.text{
+    color:black;
+}
+
+.sol{
+    font-size: 50px;
+}
+
+.nav-link:hover{
+    background-color: cornflowerblue !important;
+}
+
+body{
+    background-color: white !important;
+}
+
+.navbar{
+    background-color: black !important;
+}
+
+.navbar-brand{
+    color: #f7f8f2 !important;
+}
+
+.nav-link{
+    color: #f7f8f2 !important;
+}
+
+.nav-link.active{
+    color: black !important;
+}
+
+.text{
+    color: #f7f8f2 !important;
+}
+
+.stringBox{
+    background-color: #F7F8F2;
+}
+
+.solution{
+    background-color: #F7F8F2;
+}
+
+#regEx{
+    overflow: hidden;
+} 
+
+.btn{
+    background-color: gray;
+}
+

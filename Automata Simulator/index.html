@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AUTOMATA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    
+  </head>
+  
+  <body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg nav-tabs">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AUTOMATA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="calculator.html">Simulator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/Cristal_de-Guzman_Uydiangco_Virtorio-Users-Manual.pdf">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Body -->
+    <h1 class="p-2"><b>What is automata?</b></h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="accordion" id="accordionExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Automata Theory
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p><b>Automata Theory</b> Is the study of abstract computing devices, or “machines”. A study of mathematical model of a computer which can determine whether a particular string is in a language. Concept that describes how machine mimic human behavior. <br /> <br />
+                      Is an abstract model of a digital computer. Every automaton includes some essential features. It has mechanism for reading input. It is also assumed to operate in a discrete time frame. A mathematical model for a finite state machine. A finite state machine is a machine that given an input, jumps through a series of states according to a transition function that tells the automaton which state to go next given a current state and a current symbol. <br /> <br />
+                      <b>There are important notations that are not automaton-like, but play an important role in the study of automata and their application.</b><br /><br />
+                      <b>1. Grammars</b> <br />
+                      – are useful models when designing software that processes data with a recursive structure, the best known example is a “parser”, the component of a compiler that deals with recursively nested features of the typical programming languages. <br />
+                      <b>2. Regular Expression</b> <br />
+                      – denote the structure of data, especially text strings. <br /> <br />
+                      <b>Alphabets</b><br />
+                      An alphabet is any finite set of symbols.<br />
+                      ∑ - it denotes alphabets<br /><br />
+                      <b>Common Alphabets include:</b><br />
+                      1.	∑ = { 0,1 } , binary alphabet<br />
+                      2.	∑ = { a,b, …., z }, the set of all lower-case letters<br />
+                      3.	The set of all ASCII characters, or the set of all printable ASCII characters.<br /><br />
+                      <b>String</b><br />
+                      Is a finite sequence of symbols from some alphabet, e.g. 01001. The empty string with zero occurrences of symbols is denoted by Λ<br />
+
+                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Regular Expression
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      <b>Regular Expression</b><br /><br />
+                      A sequence of pattern that defines a string, are used to match character combinations in strings. String searching algorithm used this pattern to find the operations on a string. It is the most effective way to represent any language.<br /><br />
+                      The symbols that appear in regular expressions are the letters of the alphabet Σ, the symbol for the null string Λ, parentheses, the star operator, and the plus sign.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is Deterministic Finite Automata?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p><b>Deterministic finite automata</b> (or DFA) are finite state machines that accept or reject strings of characters by parsing them through a sequence that is uniquely determined by each string. <br /> <br />
+                      In a DFA, for a particular input character, the machine goes to one state only. A transition function is defined on every state for every input symbol. Also in DFA null (or Λ) move is not allowed, i.e., DFA cannot change state without any input character. <br />
+                      There can be many possible DFAs for a pattern.  A DFA with minimum number of states is generally preferred. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    CFG
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      <b>Context-free Grammar</b><br />
+                      Are syntactic models of languages, similar to regular expressions. Through grammar rules, CFGs describe how variables can be replaced by variables and terminals to derive strings in the language of the grammar.<br /><br />
+                      <b>A context-free grammar, CFG, is a collection of three things:</b><br />
+                      1.	An alphabet Σ of letters called terminals from which we are going to make strings that will be the words of a language.<br />
+                      2.	A set of symbols called non-terminals, one of which is the symbol S, standing for “start here”.<br />
+                      3.  A finite set of productions or substitution rules of the form A  a.<br />
+                      The language generated by the CFG. The set of all strings of terminals that can be produced from the start symbol S using the productions as substitutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Pushdown Automata
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      <b>Pushdown Automata</b><br />
+                      Is a finite automata with extra memory called stack which helps Pushdown automata to recognize Context Free Languages. Is a way to implement a context-free grammar in a similar way we design DFA for a regular grammar. Can remember an infinite amount of information.<br /><br />
+                      <b>A pushdown automaton, PDA, is a collection of eight things:</b><br /><br />
+                      1. An alphabet Σ of input letters.<br />
+                      2. An input TAPE (infinite in one direction). Initially the string of input letters is placed on the TAPE starting in cell i. The rest of the TAPE is blank.<br />
+                      3. An alphabet Г of STACK characters.<br />
+                      4. A pushdown STACK (infinite in one direction). Initially the STACK is empty (contains all blanks).<br />
+                      5. One START state that has only out-edges, no in-edges.<br />
+                      6. Halt states of two kinds: some ACCEPT and some REJECT. They have in-edges and no out-edges.<br />
+                      7. Finitely many nonbranching PUSH states that introduce characters onto the top of the STACK. They are of the form.<br />
+                      8. Finitely many branching states of two kinds:<br />
+                      (i) States that read the next unused letter from the TAPE<br />
+                      (ii) States that read the top character of the STACK
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <ul>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Automata Theory</h2>
+        <p><b>Automata Theory</b> is an exciting, theoretical branch of computer science.<br /> <br />
+            The word automaton itself, closely related to the word "automation"<br /> <br />
+            Simply stated, automata theory deals with the logic of computation with respect to simple machines, referred to as automata. <br /> <br />
+            https://cs.stanford.edu/people/eroberts/courses/soco/projects/2004-05/automata-theory/basics.html</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Regular Expression</h2>
+        <p>The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. It is the most effective way to represent any language. Regular expressions are used to match character combinations in strings. String searching algorithm used this pattern to find the operations on a string. <br /> <br />
+            https://www.javatpoint.com/automata-regular-expression</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>What is Deterministic Finite Automata?</h2>
+        <p><b>Deterministic finite automata</b> (or DFA) are finite state machines that accept or reject strings of characters by parsing them through a sequence that is uniquely determined by each string. <br /> <br />
+            The term “deterministic” refers to the fact that each string, and thus each state sequence, is unique. In a DFA, a string of symbols is parsed through a DFA automata, and each input symbol will move to the next state that can be determined.These machines are called finite because there are a limited number of possible states which can be reached. <br /> <br />
+            https://www.sisense.com/glossary/deterministic-finite-automata/</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>CFG</h2>
+        <p><b>CFG</b> stands for context-free grammar. It is is a formal grammar which is used to generate all possible patterns of strings in a given formal language. Context-free grammar G can be defined by four tuples as: <br /> <br />
+            <b>G</b> is the grammar, which consists of a set of the production rule. It is used to generate the string of a language.<br />
+            <b>T</b> is the final set of a terminal symbol. It is denoted by lower case letters.<br />
+            <b>V</b> is the final set of a non-terminal symbol. It is denoted by capital letters.<br />
+            <b>P</b> is a set of production rules, which is used for replacing non-terminals symbols(on the left side of the production) in a string with other terminal or non-terminal symbols(on the right side of the production).<br />
+            <b>S</b> is the start symbol which is used to derive the string. We can derive the string by repeatedly replacing a non-terminal by the right-hand side of the production until all non-terminal have been replaced by terminal symbols.<br /><br />
+            https://www.sisense.com/glossary/deterministic-finite-automata/</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Pushdown Automata</h2>
+        <p>TPushdown Automata is a finite automata with extra memory called stack which helps Pushdown automata to recognize Context Free Languages. <br />
+            A Pushdown Automata (PDA) can be defined as :<br /> <br />
+            <b>Q</b> is the set of states<br />
+            <b>∑</b> the set of input symbols<br />
+            <b>Γ</b> is the set of pushdown symbols (which can be pushed and popped from stack)<br />
+            <b>q0</b> is the initial state<br />
+            <b>Z</b> is the initial pushdown symbol (which is initially present in stack)<br />
+            <b>F</b> is the set of final states<br />
+            <b>δ</b> is a transition function which maps Q x {Σ ∪ ∈} x Γ into Q x Γ*. In a given state, PDA will read input symbol and stack symbol (top of the stack) and move to a new state and change the symbol of stack.<br /><br />
+            https://www.geeksforgeeks.org/introduction-of-pushdown-automata/ </p>
+      </li>
+    </ul> -->
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- <script src="src/calculator.js"></script> -->
+  </body>
+</html>
